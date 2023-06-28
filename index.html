@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>RWD Template Complete</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Sol Lee" />
+        <meta name="description" content="포트폴리오, 플롯레이아웃" />
+        <title>Portfolio , Flex Caxa Lecturer</title>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <link rel="shortcut icon" href="./images/favicon/fav32.png" />
+        <link rel="apple-touch-icon=precomposed" href="./images/favicon/fav180.png" />
+        <!-- 기본 코딩 JS 파일 -->
+        <script src="./js/jquery-1.12.4.min.js"></script>
+        <script src="./js/jquery-3.3.1.min.js"></script>
+        <script src="./js/jquery-3.4.1.min.js"></script>
+        <script src="./js/prefixfree.min.js"></script>
+
+        <!-- 기본 코딩 CSS 파일 -->
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/notosans_kr_CDN.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+
+        <!-- 박스 슬라이더 CSS -->
+        <link rel="stylesheet" href="./css/jquery.bxslider.css">
+        <style>
+          article {
+            max-width: 1920px;
+            margin: 0 auto;
+          }
+          article #gallery_wrap {
+            max-width: 1920px;
+          }
+          article #gallery_wrap img {
+            width: 100%;
+          }
+        </style>
+        <!-- 박스 슬라이더 JS -->
+        <script src="./js/jquery.bxslider.js"></script>
+        <script>
+            $(function(){
+                // alert("test");
+                $('.slide_gallery').bxSlider({
+                    mode: 'fade',
+                    pager: true,
+                    slideWidth: 1920
+                });
+            });
+        </script>
+
+    </head>
+    <body>
+        <div id="wrap">
+            <!-- 1. Header -->
+            <header class="header cf">
+                <!-- Logo -->
+                <h1 class="logo"><a href="#">
+                  <img src="./images/s_images/logo.png" alt="">
+                </a></h1>
+                <!-- /Logo -->
+
+                <!-- GNB -->
+                <nav>
+                    <ul class="gnb">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#we_are">WE&nbsp;ARE</a></li>
+                        <li><a href="#iu_collection">IU&nbsp;COLLECTION</a></li>
+                        <li><a href="#launch_calendar">LAUNCH&nbsp;CALENDAR</a></li>
+                        <li><a href="#contact_us">CONTACT&nbsp;US</a></li>
+                    </ul>
+                </nav>
+                <!-- /GNB -->
+
+                <!-- Hamberger Toggle -->
+                <span class="menu_toggle_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <!-- /Hamberger Toggle -->
+            </header>
+            <!-- /1. Header -->
+
+            <!-- 2. Slider -->
+            <!-- 2-1. 원본 구조 -->
+            <!-- <article class="slider">
+                <h2 class="slider_img">
+                    <img src="./images/p_images/slide1.jpg" alt="슬라이드 이미지" />
+                </h2>
+            </article> -->
+            <!-- 2-2. 슬라이드 제이쿼리 플러그인 작업 -->
+            <article class="slider">
+              <div id="gallery_wrap">
+                  <!-- BxSlider 이미지 -->
+                  <ul class="slide_gallery">
+                      <li><img src="./images/s_images/slide1.png" alt="슬라이더01"></li>
+                      <li><img src="./images/s_images/slide2.png" alt="슬라이더02"></li>
+                      <li><img src="./images/s_images/slide3.png" alt="슬라이더03"></li>
+                      <li><img src="./images/s_images/slide4.png" alt="슬라이더04"></li>
+                  </ul>
+            </article>
+            <!-- /2. Slider -->
+
+            <!-- 3. Contents -->
+            <main role="main" class="mlr16">
+                <section class="content">
+                    <!-- 3-1. Display -->
+                    <section class="display_section container" id="we_are">
+                        <div class="cf">
+                            <h2 class="sec_title">WE ARE</h2>
+                            <p class="desc">
+                                We stand for something bigger than sneakers. We champion those who are fearlessly <br>
+                                driven by their passions. We elevate sport. We do right by people and the planet.
+                            </p>
+                        </div>
+                    </section>
+                    <!-- /3-1. Display -->
+    
+                    <!-- 3-2. Promotion -->
+                    <section class="promotion_section container">
+                        <h2>
+                            <ul class="promotion_list cf">
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/s_images/home.png" alt="홈 아이콘" />
+                                        <h3>HOME</h3>
+                                        <p>
+                                            New Fashion &amp; New Design <br>
+                                            New Balance
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#we_are">
+                                        <img src="./images/s_images/user.png" alt="회원정보 아이콘" />
+                                        <h3>WE&nbsp;ARE</h3>
+                                        <p>
+                                            Together, we drive meaningful change in communities around the world<br> 
+                                            We Got Now
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#iu_collection">
+                                        <img src="./images/s_images/iucollection.png" alt="작업물 아이콘" />
+                                        <h3>IU&nbsp;COLLECTION</h3>
+                                        <p>
+                                            Recommendation of IU <br>
+                                            WHO MOST suitable with NEW Balance
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#contact_us">
+                                        <img src="./images/s_images/contact.png" alt="글쓰기 아이콘" />
+                                        <h3>CONTACT&nbsp;US</h3>
+                                        <p>
+                                            Find answers to your most frequently asked questions
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </h2>
+                    </section>
+                    <!-- /3-2. Promotion -->
+    
+                    <hr class="divider" />
+    
+                    <!-- 3.3 Work -->
+                    <section class="work_section" id="iu_collection">
+                        <div>
+                            <h2 class="sec_title container">IU COLLECTION</h2>
+                            <ul class="work_list cf">
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <h3>Outdoor</h3>
+                                            <span>All Terrain 의류</span>
+                                        </div>
+                                        <img src="./images/s_images/collection_outdoor.png" alt="outdoor" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <h3>CT302</h3>
+                                            <span>대표적인 IU 신발 CT302</span>
+                                        </div>
+                                        <img src="./images/s_images/collection_ct302.png" alt="CT302" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <h3>Shifted line &amp; 1906 RA</h3>
+                                            <span>NB Shifted 웜업자켓 &amp; 1906 RA</span>
+                                        </div>
+                                        <img src="./images/s_images/collection_1906ra.png" alt="1906 RA" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <h3>Sports collection &amp; 327 UND</h3>
+                                            <span>NB Sports Club 하프 집업 &amp; 327</span>
+                                        </div>
+                                        <img src="./images/s_images/collection_327und.png" alt="327 UND" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <h3>Blue Court&#44; NB Heritage</h3>
+                                            <span>IU의 레트로 스포츠 스타이링</span>
+                                        </div>
+                                        <img src="./images/s_images/collection_heritage.png" alt="Blue Court NB Heritage" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <h3>Blue Court&#44; Warm up</h3>
+                                            <span>블루 웜업 바람막이와 1906 RI</span>
+                                        </div>
+                                        <img src="./images/s_images/collection_bluecourt.png" alt="Blue Court Warm Up" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <h3>Color Set-up &amp; XC-72</h3>
+                                            <span>내츄럴 톤의 스웻셋업과 XC-72</span>
+                                        </div>
+                                        <img src="./images/s_images/collection_xc72png.png" alt="XC-72" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <h3>NB Logo</h3>
+                                            <span>IU와 함께한 574와 뉴발란스 로고 티셔츠</span>
+                                        </div>
+                                        <img src="./images/s_images/collection_nblogo.png" alt="NB Logo" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <!-- /3.3 Work -->
+    
+                    <hr class="m_divider" />
+    
+                    <!-- 3.4 Blog -->
+                    <section class="blog_section container" id="launch_calendar">
+                        <div class="cf">
+                            <h2 class="sec_title">LAUNCH<br>CALENDAR</h2>
+                            <ul class="blog_list cf">
+                                <li>
+                                    <div class="calendar_img">
+                                        <a href="#">
+                                            <img src="./images/s_images/calendar_u9060bur.png" alt="u9060bur" />
+                                        </a>
+                                    </div>
+                                    <div class="calendar_info_1">
+                                        <time datetime="1982-03-01">Start From 2021-12</time>
+                                        <a href="#">
+                                            <h3>U9060BUR &amp; GRE</h3>
+                                        </a>
+                                    </div>
+                                    <div class="price">
+                                        <a href="#">
+                                            &#8361;189,000
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="calendar_img">
+                                        <a href="#">
+                                            <img src="./images/s_images/calendar_rc30.png" alt="rc30" />
+                                        </a>
+                                    </div>
+                                    <div class="calendar_info_2">
+                                        <time datetime="20220-01-01">Start From 2022-01</time>
+                                        <a href="#">
+                                            <h3>URC30AA</h3>
+                                        </a>
+                                    </div>
+                                    <div class="price">
+                                        <a href="#">
+                                            &#8361;139,000
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="calendar_img">
+                                        <a href="#">
+                                            <img src="./images/s_images/calendar_ct302.png" alt="CT302PC" />
+                                        </a>
+                                    </div>
+                                    <div class="calendar_info_3">
+                                        <time datetime="1982-03-20">Start From 2022-06</time>
+                                        <a href="#">
+                                            <h3>CT302PC</h3>
+                                        </a>
+                                    </div>
+                                    <div class="soldout">
+                                        <a href="#">
+                                            Sold Out
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <!-- /3.4 Blog -->
+    
+                    <!-- 3.5 Contact -->
+                    <section class="contact_section container" id="contact_us">
+                        <div class="cf">
+                            <h2 class="sec_title">CONTACT</h2>
+                            <form action="#" class="form_box">
+                                <fieldset class="cf">
+                                    <legend class="blind">CONTACT&nbsp;US</legend>
+                                    <!-- Input Form -->
+                                    <div class="form">
+                                        <label for="name" class="blind">Name</label>
+                                        <input type="text" name="name" id="name" placeholder="Name" />
+                                        <label for="phone" class="blind">Phone</label>
+                                        <input type="tel" name="phone" id="phone" placeholder="Phone" />
+                                        <label for="email" class="blind">Email</label>
+                                        <input type="email" name="email" id="email" placeholder="Email Address" />
+                                    </div>
+                                    <!-- /Input Form -->
+    
+                                    <!-- Textarea Form -->
+                                    <div class="txta">
+                                        <label for="message" class="blind">Message</label>
+                                        <textarea name="message" id="message" placeholder="Message"></textarea>
+                                    </div>
+                                    <!-- /Textarea Form -->
+    
+                                </fieldset>
+                                <!-- Button -->
+                                <div class="send_btn">
+                                    <button>SEND MESSAGE</button>
+                                </div>
+                                <!-- /Button -->
+                            </form>
+                        </div>
+                    </section>
+                    <!-- /3.5 Contact -->
+                </section>
+            </main >
+            <!-- /3. Contents -->
+
+            <!-- 4. Footer -->
+            <footer class="footer">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4105.002853143298!2d127.02393794535203!3d37.49871768300053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca159aaaaaaab%3A0x99ee564580fe26a9!2z64m067Cc656A7IqkIOqwleuCqOygkA!5e0!3m2!1sko!2skr!4v1677076890868!5m2!1sko!2skr" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>COPYRIGHT ALL RIGHTS RESERVED., <span>WEBADD</span></p>
+            </footer>
+            <!-- /4. Footer -->
+        </div>
+
+        <script>
+            // alert("test");
+            $('.menu_toggle_btn').on('click',function(){
+                $('.gnb').stop().toggle();
+            });
+
+
+            var calendarImg = $('.calendar_img');
+            for(var i = 0;i<calendarImg.length;i++){
+                calendarImg.eq(i).on({'mouseenter':function(){
+                    // alert('mouseenter');
+                    $(this).next().css({display:'none'});
+                    $(this).next().next().css({display:'block'});
+                }, 'mouseleave':function(){
+                    // alert('mouseleave');
+                    $(this).next().css({display:'block'});
+                    $(this).next().next().css({display:'none'});
+                }});
+            }
+        </script>
+    </body>
+</html>
